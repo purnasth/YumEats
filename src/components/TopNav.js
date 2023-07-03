@@ -33,7 +33,7 @@ const TopNav = () => {
           placeholder="Search meals"
         />
       </div>
-      <button className="bg-orange-700 text-white hidden md:flex items-center py-2 rounded-full">
+      <button className="bg-orange-700 text-white border-none hidden md:flex items-center py-2 rounded-full">
         <BsFillCartFill size={20} />
         Cart
       </button>

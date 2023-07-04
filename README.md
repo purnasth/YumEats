@@ -69,12 +69,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
 
-YumEats: Your go-to online restaurant for a seamless dining experience. Order, track, and indulge in delicious meals with ease.
+<!-- ```
+``` -->
+<h1>YumEats:</h1>
+Your go-to online restaurant for a seamless dining experience. Order, track, and indulge in delicious meals with ease.
+<br/>
 YumEats is an online restaurant website built using create-react-app.
 
-<h3>Day 1</h3>
-<p>Top Navbar</p>
+<h3>Day 1: Top Navbar</h3>
 <img src="./public/img/topNav.png"/>
-<h3>Day 2</h3>
-<p>Side Navbar</p>
+<h3>Day 2: Side Navbar</h3>
 <img src="./public/img/sideNav.png"/>

@@ -17,7 +17,7 @@ const Delivery = () => {
             Get The App
           </p>
           <h3 className="text-2xl font-bold py-2 text-center md:text-center">
-          Quality foods! Unbeatable prices!!
+            Quality foods! Unbeatable prices!!
           </h3>
           <p className="text-justify px-0 sm:px-8">
             lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam

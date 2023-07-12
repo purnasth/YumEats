@@ -23,6 +23,7 @@ const TopPicks = () => {
             perPage: 4,
             perMove: 1,
             gap: "1rem",
+            drag: "free",
             autoplay: true,
             breakpoints: {
               640: {
@@ -39,21 +40,21 @@ const TopPicks = () => {
         >
           {topPicks.map((topPick, index) => (
             <SplideSlide key={topPick.id}>
-              <div className="w-full h-[250px] rounded-2xl bg-center bg-cover duration-500">
+              <div className="w-full h-[200px] rounded-3x">
                 <img
                   src={topPick.image}
                   alt={topPick.name}
-                  className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
+                  className="w-full h-full rounded-3xl bg-center object-cover duration-500 cursor-pointer hover:scale-105 ease-out"
                 />
 
                 <div className="absolute bottom-0 left-0 p-2 px-4 text-white flex items-center justify-between w-full">
                   <div className="flex flex-col">
-                    <h2 className="text-xl font-bold">{topPick.name}</h2>
-                    <h3 className="text-lg font-bold">{topPick.price}</h3>
+                    <p className="text-xl font-bold">{topPick.name}</p>
+                    <p className="text-lg">{topPick.price}</p>
                   </div>
 
                   <div>
-                    <button className="bg-orange-700 p-4 rounded-lg mt-2 ml-2 flex items-center transition duration-300 hover:bg-white hover:text-orange-700 border-none">
+                    <button className="bg-orange-700 px-4 py-3 rounded-lg mt-2 ml-2 flex items-center transition duration-300 hover:bg-white hover:text-orange-700 border-none">
                       <BsFillCartFill size={20} className="mr-1" />
                       Add to Cart
                     </button>

@@ -13,8 +13,8 @@ const TopPicks = () => {
 
   return (
     <div>
-      <h2 className="text-orange-700 font-bold text-2xl text-center pb-8">
-        Top Picks
+      <h2 className="font-bold text-2xl sm:text-4xl  text-center py-4">
+        Top <span className="text-orange-700">Picks</span>
       </h2>
       <div className="max-w-[1520px] m-auto p-2 relative">
         <Splide
@@ -40,11 +40,11 @@ const TopPicks = () => {
         >
           {topPicks.map((topPick, index) => (
             <SplideSlide key={topPick.id}>
-              <div className="w-full h-[200px] rounded-3x">
+              <div className="w-full h-[200px] rounded-3xl hover:scale-105 ease-out duration-500">
                 <img
                   src={topPick.image}
                   alt={topPick.name}
-                  className="w-full h-full rounded-3xl bg-center object-cover duration-500 cursor-pointer hover:scale-105 ease-out"
+                  className="w-full h-full rounded-3xl bg-center object-cover cursor-pointer"
                 />
 
                 <div className="absolute bottom-0 left-0 p-2 px-4 text-white flex items-center justify-between w-full">

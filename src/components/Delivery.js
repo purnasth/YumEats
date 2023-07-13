@@ -3,9 +3,9 @@ import React from "react";
 const Delivery = () => {
   return (
     <div className="w-full bg-white py-16 px-4">
-      <h3 className="text-orange-700 font-bold text-2xl text-center">
-        Quick Delivery App
-      </h3>
+       <h2 className="font-bold text-2xl sm:text-4xl text-center py-4">
+        Quick <span className="text-orange-700 ">Delivery</span>
+      </h2>
       <div className="max-w-[1520px] mx-auto grid md:grid-cols-2 items-center">
         <img
           className="w-full h-auto mx-auto md:max-w-none"
@@ -16,7 +16,7 @@ const Delivery = () => {
           <p className="text-[#00df91] font-bold text-2xl text-center md:text-center">
             Get The App
           </p>
-          <h3 className="text-2xl font-bold py-2 text-center md:text-center">
+          <h3 className=" text-lg md:text-2xl font-bold py-2 text-center md:text-center">
             Quality foods! Unbeatable prices!!
           </h3>
           <p className="text-justify px-0 sm:px-8">

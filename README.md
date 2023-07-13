@@ -71,12 +71,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 <!-- ```
 ``` -->
+
+### Deployed Live URL : https://yumeats.pages.dev/
+
 <h1>YumEats:</h1>
 Your go-to online restaurant for a seamless dining experience. Order, track, and indulge in delicious meals with ease.
 <br/>
 YumEats is an online restaurant website built using create-react-app.
 
 <h3>Day 1: Top Navbar</h3>
-<img src="./public/img/topNav.png"/>
+<img src="https://pbs.twimg.com/media/F0hKCh1XoAA_LAs?format=jpg&name=large" alt="Top Navbar"/>
 <h3>Day 2: Side Navbar</h3>
-<img src="./public/img/sideNav.png"/>
+<img src="https://pbs.twimg.com/media/F0mqSSsXsAIYEwU?format=jpg&name=large" alt="Side Navbar"/>
+<h3>Day 3: Featured Slider </h3>
+<img src="https://pbs.twimg.com/media/F0sT9_aWIBk9wuA?format=jpg&name=large" alt="Featured Slider"/>
+<h3>Day 4: Delivery App</h3>
+<img src="https://pbs.twimg.com/media/F0ujKVLWYAAfCpG?format=jpg&name=large" alt="Delivery App"/>
+<h3>Day 5: Top Picks Slider</h3>
+<img src="https://twitter.com/i/status/1678842856499290113" alt="Top Picks Slider"/>
+<h3>Day 6: Our Meal</h3>
+<img src="https://pbs.twimg.com/media/F07oHdhXwAEUabk?format=jpg&name=large" alt="Our Meal"/>
+<h3>Day 7: Partners and Footers</h3>
+<img src="https://pbs.twimg.com/media/F08HzvvXwAE3-fL?format=jpg&name=large" alt="Partners and Footers"/>
+<!-- <h3>Day </h3>
+<img src="" alt=""/> -->

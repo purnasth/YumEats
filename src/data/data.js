@@ -238,3 +238,100 @@ export const mealData = [
       "Crisp lettuce, tomatoes, cucumbers, olives, feta cheese, and Greek dressing.",
   },
 ];
+
+export const partners = [
+  {
+    id: 1,
+    image:
+      "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/delivery-logo-design-template-466211f8593607e4147c28fe0ef1b520_screen.jpg?ts=1582489436",
+    name: "SamanPuram",
+    description:
+      "SamanPuram is a reliable delivery service that ensures your orders are delivered quickly and securely. With our efficient team and top-notch logistics, we guarantee a seamless delivery experience.",
+  },
+  {
+    id: 2,
+    image:
+      "https://cdn.dribbble.com/users/5972682/screenshots/14125412/online_shop_logo_4x.jpg",
+    name: "SamanKinam",
+    description:
+      "SamanKinam is your go-to online shopping platform. With a wide range of products and easy navigation, we provide a convenient shopping experience. Browse, add to cart, and enjoy hassle-free delivery at your doorstep.",
+  },
+  {
+    id: 3,
+    image:
+      "https://1000logos.net/wp-content/uploads/2017/03/McDonalds-Logo-1968.png",
+    name: "McDonald's",
+    description:
+      "McDonald's is an iconic fast-food chain known for its delicious burgers, fries, and refreshing beverages. Our commitment to quality ingredients and friendly service has made us a beloved choice for millions of customers worldwide.",
+  },
+  {
+    id: 4,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Honda_Logo.svg/2552px-Honda_Logo.svg.png",
+    name: "Honda",
+    description:
+      "Honda is a leading manufacturer of automobiles, motorcycles, and power equipment. With a focus on innovation, reliability, and performance, we strive to deliver exceptional products that enhance your mobility and power your adventures.",
+  },
+  {
+    id: 5,
+    image: "https://fontmeme.com/images/Yamaha-Logo.jpg",
+    name: "Yamaha",
+    description:
+      "Yamaha is a renowned brand in the world of motorcycles, marine products, and other motorized products. Our commitment to engineering excellence and cutting-edge design ensures that every Yamaha product delivers unmatched performance and exhilarating experiences.",
+  },
+  {
+    id: 6,
+    image:
+      "https://logohistory.net/wp-content/uploads/2023/01/Mercedes-Benz-Logo.png",
+    name: "Mercedes",
+    description:
+      "Mercedes is a symbol of luxury, elegance, and automotive engineering at its finest. Our range of vehicles showcases the perfect blend of style, comfort, and cutting-edge technology, providing an exceptional driving experience like no other.",
+  },
+  {
+    id: 7,
+    image:
+      "https://www.pngkey.com/png/detail/387-3875067_ducati-motor-logo-png-ducati-logo-png.png",
+    name: "Ducati",
+    description:
+      "Ducati is synonymous with high-performance motorcycles that ignite your passion for speed and exhilaration. Our Italian craftsmanship, precision engineering, and distinctive design make every Ducati motorcycle a true work of art.",
+  },
+  {
+    id: 8,
+    image: "https://vehlogo.com/wp-content/uploads/2022/08/MV_Agusta-Logo.png",
+    name: "MV Agusta",
+    description:
+      "MV Agusta is a prestigious brand renowned for its luxurious and high-performance motorcycles. Each MV Agusta motorcycle is a masterpiece of design and engineering, crafted to deliver an unmatched blend of power, style, and exclusivity.",
+  },
+  {
+    id: 9,
+    image:
+      "https://logos-download.com/wp-content/uploads/2018/09/Shark_Helmets_Logo.png",
+    name: "Shark Helmets",
+    description:
+      "Shark Helmets is a leading manufacturer of innovative and reliable helmets for motorcycle riders. With a focus on safety, comfort, and style, our helmets offer the utmost protection on the road, allowing riders to enjoy their journey with peace of mind.",
+  },
+  {
+    id: 10,
+    image:
+      "https://sl-grafics.com/wp-content/uploads/2020/01/LS2-Helmets-1.jpg",
+    name: "LS2",
+    description:
+      "LS2 Helmets is a leading manufacturer of innovative and reliable helmets for motorcycle riders. With a focus on safety, comfort, and style, our helmets offer the utmost protection on the road, allowing riders to enjoy their journey with peace of mind.",
+  },
+  {
+    id: 11,
+    image:
+      "https://www.macwelt.de/wp-content/uploads/2023/04/4331547_original-1.jpg?quality=50&strip=all&w=1024",
+    name: "Apple",
+    description:
+      "Apple is a global technology company known for its revolutionary products and cutting-edge technology. From iPhones and MacBooks to iPads and Apple Watches, our devices empower users to unleash their creativity and enhance their daily lives.",
+  },
+  {
+    id: 11,
+    image:
+      "https://www.fontshut.com/wp-content/uploads/2022/09/Christian-Dior.png",
+    name: "Dior",
+    description:
+      "Dior is a leading luxury fashion brand renowned for its exquisite designs and high-quality products. From haute couture to accessories and fragrances, we embody elegance and sophistication, bringing a touch of glamour to your wardrobe.",
+  },
+];

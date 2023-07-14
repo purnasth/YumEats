@@ -65,6 +65,7 @@ export const mealData = [
     price: "Rs. 1299",
     description:
       "Classic Italian dish with homemade tomato sauce and ground beef.",
+    rating: 4.5,
   },
   {
     id: 2,
@@ -74,6 +75,7 @@ export const mealData = [
     price: "Rs. 1099",
     description:
       "Fresh romaine lettuce, grilled chicken breast, Parmesan cheese, and Caesar dressing.",
+    rating: 4.2,
   },
   {
     id: 3,
@@ -83,6 +85,7 @@ export const mealData = [
     price: "Rs. 999",
     description:
       "Tortilla filled with seasoned ground beef, beans, rice, cheese, and salsa.",
+    rating: 3.8,
   },
   {
     id: 4,
@@ -92,6 +95,7 @@ export const mealData = [
     price: "Rs. 1499",
     description:
       "Traditional thin-crust pizza with tomato sauce, mozzarella cheese, and fresh basil.",
+    rating: 4.9,
   },
   {
     id: 5,
@@ -101,6 +105,7 @@ export const mealData = [
     price: "Rs. 1199",
     description:
       "Crispy battered fish fillets served with French fries and tartar sauce.",
+    rating: 3.5,
   },
   {
     id: 6,
@@ -110,6 +115,7 @@ export const mealData = [
     price: "Rs. 899",
     description:
       "Grilled vegetables, hummus, and mixed greens wrapped in a tortilla.",
+    rating: 3.0,
   },
   {
     id: 7,
@@ -119,6 +125,7 @@ export const mealData = [
     price: "Rs. 999",
     description:
       "Juicy beef patty topped with cheese, lettuce, tomato, and pickles.",
+    rating: 4.3,
   },
   {
     id: 8,
@@ -128,6 +135,7 @@ export const mealData = [
     price: "Rs. 1399",
     description:
       "Grilled chicken marinated in teriyaki sauce, served with rice and steamed vegetables.",
+    rating: 4.7,
   },
   {
     id: 9,
@@ -137,6 +145,7 @@ export const mealData = [
     price: "Rs. 999",
     description:
       "Fresh tomatoes, mozzarella cheese, and basil drizzled with balsamic glaze.",
+    rating: 4.1,
   },
   {
     id: 10,
@@ -146,6 +155,7 @@ export const mealData = [
     price: "Rs. 1699",
     description:
       "Sautéed shrimp in a garlic and butter sauce, served over pasta.",
+    rating: 4.0,
   },
   {
     id: 11,
@@ -155,6 +165,7 @@ export const mealData = [
     price: "Rs. 1199",
     description:
       "Assorted vegetables cooked in a flavorful curry sauce, served with rice.",
+    rating: 4.4,
   },
   {
     id: 12,
@@ -164,6 +175,7 @@ export const mealData = [
     price: "Rs. 1599",
     description:
       "Slow-cooked pork ribs slathered in tangy barbecue sauce, served with coleslaw.",
+    rating: 3.3,
   },
   {
     id: 13,
@@ -173,6 +185,7 @@ export const mealData = [
     price: "Rs. 1099",
     description:
       "Thin and crispy flatbread topped with tomato sauce, mozzarella cheese, and fresh basil.",
+    rating: 4.8,
   },
   {
     id: 14,
@@ -182,6 +195,7 @@ export const mealData = [
     price: "Rs. 1799",
     description:
       "Grilled salmon glazed with teriyaki sauce, served with roasted vegetables.",
+    rating: 4.6,
   },
   {
     id: 15,
@@ -191,6 +205,7 @@ export const mealData = [
     price: "Rs. 1499",
     description:
       "Grilled chicken breast in a creamy Alfredo sauce, served over fettuccine pasta.",
+    rating: 3.7,
   },
   {
     id: 16,
@@ -200,6 +215,7 @@ export const mealData = [
     price: "Rs. 899",
     description:
       "Grilled chicken, romaine lettuce, Parmesan cheese, and Caesar dressing wrapped in a tortilla.",
+    rating: 3.4,
   },
   {
     id: 17,
@@ -209,6 +225,7 @@ export const mealData = [
     price: "Rs. 1299",
     description:
       "Sliced beef cooked with vegetables in a savory soy sauce, served over rice.",
+    rating: 4.3,
   },
   {
     id: 18,
@@ -218,6 +235,7 @@ export const mealData = [
     price: "Rs. 1199",
     description:
       "Penne pasta with tomato sauce, mozzarella cheese, and fresh basil.",
+    rating: 3.2,
   },
   {
     id: 19,
@@ -227,6 +245,7 @@ export const mealData = [
     price: "Rs. 999",
     description:
       "Grilled chicken, cheese, and vegetables folded in a tortilla, served with salsa and sour cream.",
+    rating: 3.1,
   },
   {
     id: 20,
@@ -236,6 +255,7 @@ export const mealData = [
     price: "Rs. 1099",
     description:
       "Crisp lettuce, tomatoes, cucumbers, olives, feta cheese, and Greek dressing.",
+    rating: 4.0,
   },
 ];
 

@@ -2,16 +2,21 @@ import React, { useState } from "react";
 import { mealData } from "../data/data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faShare } from "@fortawesome/free-solid-svg-icons";
+import Popup from "./PopUp";
 
 const Meal = () => {
   const [foods, setFoods] = useState(mealData);
   const [activeCategory, setActiveCategory] = useState("all");
+  const [showPopup, setShowPopup] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const filterCategory = (category) => {
     if (category === "all") {
       setFoods(mealData);
     } else {
-      const filteredFoods = mealData.filter((item) => item.category === category);
+      const filteredFoods = mealData.filter(
+        (item) => item.category === category
+      );
       setFoods(filteredFoods);
     }
     setActiveCategory(category);
@@ -70,7 +75,10 @@ const Meal = () => {
 
       <div className="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-4 gap-4">
         {foods.map((item) => (
-          <div key={item.id} className="border-none hover:scale-105 duration-300 relative">
+          <div
+            key={item.id}
+            className="border-none hover:scale-105 duration-300 relative"
+          >
             <img
               src={item.image}
               alt={item.title}
@@ -83,15 +91,26 @@ const Meal = () => {
               </p>
             </div>
             <div className="pl-4 py-4 -mt-7">
-              <p className="flex items-center text-orange-700 text-xs font-bold cursor-pointer">
+              <p
+                className="flex items-center text-orange-700 text-xs font-bold cursor-pointer"
+                onClick={() => {
+                  setShowPopup(true);
+                  setSelectedItem(item);
+                }}
+              >
                 View More
-                {/* <FontAwesomeIcon className="ml-2" icon={faArrowRight} /> */}
                 <FontAwesomeIcon className="ml-2" icon={faShare} />
               </p>
             </div>
           </div>
         ))}
       </div>
+      {showPopup && (
+        <Popup
+          selectedItem={selectedItem}
+          onClose={() => setShowPopup(false)}
+        />
+      )}
     </div>
   );
 };

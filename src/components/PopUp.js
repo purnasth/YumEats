@@ -30,9 +30,12 @@ const PopUp = ({ selectedItem, onClose, onAddToCart }) => {
           alt={selectedItem.title}
           className="w-full h-auto object-cover rounded-lg mb-4 max-w-xl m-auto"
         />
-        <p className="text-sm mb-2">Price: {selectedItem.price}</p>
+        <p className="text-sm mb-2">Price: Rs. {selectedItem.price}</p>
         <p className="text-sm mb-2">Description: {selectedItem.description}</p>
-        <p className="text-sm mb-2">Discount: {selectedItem.discount}</p>
+        <p className="text-sm mb-2">
+          Discount:{" "}
+          <span className="text-green-500 font-bold"> Rs. {selectedItem.discount}</span>
+        </p>
         <div className="flex mb-4">
           <p className="text-sm mr-2">Rating:</p>
           {renderStars(selectedItem.rating)}

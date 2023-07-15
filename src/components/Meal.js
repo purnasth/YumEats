@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { mealData } from "../data/data";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faShare } from "@fortawesome/free-solid-svg-icons";
 import PopUp from "./PopUp";
 import AddedCarts from "./AddedCarts";
 
@@ -31,7 +29,24 @@ const Meal = () => {
     setSelectedItem(null);
   };
   const addToCart = (item) => {
-    setAddedCarts((prevCarts) => [...prevCarts, item]);
+    const existingCartItem = addedCarts.find(
+      (cartItem) => cartItem.id === item.id
+    );
+    if (existingCartItem) {
+      setAddedCarts((prevCarts) =>
+        prevCarts.map((cartItem) =>
+          cartItem.id === item.id
+            ? { ...cartItem, quantity: cartItem.quantity + 1 }
+            : cartItem
+        )
+      );
+    } else {
+      setAddedCarts((prevCarts) => [
+        ...prevCarts,
+        { ...item, id: Math.random().toString(), quantity: 1 },
+      ]);
+    }
+    setSelectedItem(null);
   };
 
   return (
@@ -100,7 +115,7 @@ const Meal = () => {
             <div className="flex justify-between py-2 px-4">
               <p className="font-bold drop-shadow-2xl">{item.title}</p>
               <p className="bg-orange-700 h-24 w-24 rounded-full py-6 px-2 -mt-16 text-white border-white border-8 text-center">
-                {item.price}
+                Rs. {item.price}
               </p>
             </div>
           </div>
@@ -112,7 +127,9 @@ const Meal = () => {
         onClose={closePopUp}
         onAddToCart={addToCart}
       />
-      {addedCarts.length > 0 && <AddedCarts addedCarts={addedCarts} />}
+      {addedCarts.length > 0 && (
+        <AddedCarts addedCarts={addedCarts} setAddedCarts={setAddedCarts} />
+      )}
     </div>
   );
 };

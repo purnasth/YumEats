@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import Meal from "./components/Meal";
 import TopNav from "./components/TopNav";
 import TopPicks from "./components/TopPicks";
-// import TopPickSs from "./components/TopPickSs";
 function App() {
   return (
     <div className="App">
@@ -13,7 +12,6 @@ function App() {
       <Featured />
       <Delivery />
       <TopPicks />
-      {/* <TopPickSs /> */}
       <Meal />
       <Categories />
       <Footer />

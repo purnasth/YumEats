@@ -17,7 +17,7 @@ import {
 const TopNav = () => {
   const [sideNav, setSideNav] = useState(false);
   return (
-    <div className="max-w-[1520px] mx-auto flex justify-between items-center p-4">
+    <div className="max-w-[1520px] mx-auto flex justify-between items-center p-4 sticky top-0 z-50 bg-white">
       <div className="flex items-center">
         <div onClick={() => setSideNav(!sideNav)} className="cursor-pointer">
           <AiOutlineMenu size={25} />

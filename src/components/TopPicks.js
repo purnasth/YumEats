@@ -50,7 +50,7 @@ const TopPicks = () => {
                 <div className="absolute bottom-0 left-0 p-2 px-4 text-white flex items-center justify-between w-full">
                   <div className="flex flex-col">
                     <p className="text-xl font-bold">{topPick.name}</p>
-                    <p className="text-lg">{topPick.price}</p>
+                    <p className="text-lg">Rs. {topPick.price}</p>
                   </div>
 
                   <div>

@@ -1,8 +1,9 @@
 import React from "react";
 import { faClose, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { BsFillCartFill } from "react-icons/bs";
 
-const PopUp = ({ selectedItem, onClose }) => {
+const PopUp = ({ selectedItem, onClose, onAddToCart }) => {
   if (!selectedItem) {
     return null;
   }
@@ -37,10 +38,17 @@ const PopUp = ({ selectedItem, onClose }) => {
           {renderStars(selectedItem.rating)}
         </div>
         <button
-          className="text-orange-700 px-4 py-2 absolute top-0 right-0 hover:text-orange-600 focus:outline-none border-none text-3xl"
+          className="text-orange-700 p-4 absolute top-0 right-0 hover:text-orange-600 focus:outline-none border-none text-2xl"
           onClick={onClose}
         >
           <FontAwesomeIcon size={20} icon={faClose} />
+        </button>
+        <button
+          className="bg-orange-700 text-white px-4 py-3 rounded-lg mt-2 ml-2 flex items-center transition duration-300 hover:bg-white hover:text-orange-700 border-orange-700"
+          onClick={() => onAddToCart(selectedItem)}
+        >
+          <BsFillCartFill size={20} className="mr-1" />
+          Add to Cart
         </button>
       </div>
     </div>

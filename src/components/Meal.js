@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { mealData } from "../data/data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faShare } from "@fortawesome/free-solid-svg-icons";
-import Popup from "./PopUp";
+import PopUp from "./PopUp";
+import AddedCarts from "./AddedCarts";
 
 const Meal = () => {
   const [foods, setFoods] = useState(mealData);
   const [activeCategory, setActiveCategory] = useState("all");
-  const [showPopup, setShowPopup] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [addedCarts, setAddedCarts] = useState([]);
 
   const filterCategory = (category) => {
     if (category === "all") {
@@ -20,6 +21,17 @@ const Meal = () => {
       setFoods(filteredFoods);
     }
     setActiveCategory(category);
+  };
+
+  const openPopUp = (item) => {
+    setSelectedItem(item);
+  };
+
+  const closePopUp = () => {
+    setSelectedItem(null);
+  };
+  const addToCart = (item) => {
+    setAddedCarts((prevCarts) => [...prevCarts, item]);
   };
 
   return (
@@ -83,6 +95,7 @@ const Meal = () => {
               src={item.image}
               alt={item.title}
               className="w-full h-[200px] object-cover rounded-3xl cursor-pointer"
+              onClick={() => openPopUp(item)}
             />
             <div className="flex justify-between py-2 px-4">
               <p className="font-bold drop-shadow-2xl">{item.title}</p>
@@ -90,27 +103,16 @@ const Meal = () => {
                 {item.price}
               </p>
             </div>
-            <div className="pl-4 py-4 -mt-7">
-              <p
-                className="flex items-center text-orange-700 text-xs font-bold cursor-pointer"
-                onClick={() => {
-                  setShowPopup(true);
-                  setSelectedItem(item);
-                }}
-              >
-                View More
-                <FontAwesomeIcon className="ml-2" icon={faShare} />
-              </p>
-            </div>
           </div>
         ))}
       </div>
-      {showPopup && (
-        <Popup
-          selectedItem={selectedItem}
-          onClose={() => setShowPopup(false)}
-        />
-      )}
+
+      <PopUp
+        selectedItem={selectedItem}
+        onClose={closePopUp}
+        onAddToCart={addToCart}
+      />
+      {addedCarts.length > 0 && <AddedCarts addedCarts={addedCarts} />}
     </div>
   );
 };

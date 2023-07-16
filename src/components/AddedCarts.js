@@ -1,4 +1,14 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCartPlus,
+  faMinus,
+  faMinusCircle,
+  faPlugCirclePlus,
+  faPlus,
+  faPlusCircle,
+  faPlusSquare,
+} from "@fortawesome/free-solid-svg-icons";
 
 const AddedCarts = ({ addedCarts, setAddedCarts }) => {
   const handleRemoveFromCart = (cartId) => {
@@ -26,24 +36,35 @@ const AddedCarts = ({ addedCarts, setAddedCarts }) => {
     );
   };
 
+  const calculateDiscount = () => {
+    return addedCarts.reduce(
+      (totalDiscount, item) =>
+        totalDiscount + (item.discount || 0) * item.quantity,
+      0
+    );
+  };
+
+  const totalPriceWithDiscount = calculateTotalPrice() - calculateDiscount();
+  const totalPriceWithoutDiscount = calculateTotalPrice();
+
   return (
-    <div className="fixed bottom-4 right-4 bg-gray-800 text-white p-4 rounded-lg shadow-md">
-      {" "}
+    <div className="fixed bottom-4 md:right-4 bg-gray-800 text-white p-4 rounded-lg shadow-md mx-auto md:mx-0">
       {addedCarts.map((cart) => (
         <div
           key={cart.id}
-          className="flex items-center justify-between py-1 mb-2 border-b border-gray-600"
+          className="flex flex-col md:flex-row items-center justify-between py-1 mb-2 border-b border-gray-600"
         >
           <div className="flex items-center mr-4">
             <img
               src={cart.image}
               alt={cart.title}
-              className="w-16 h-16 object-contain mr-2 rounded-md"
+              className="w-16 h-auto object-contain mr-2 rounded-md"
             />
             <div>
               <span className="font-semibold">{cart.title}</span>
-              <p className="text-green-400">Rs. {cart.price}</p>
+              <p className="text-white font-bold">Rs. {cart.price}</p>
               <p className="text-red-500">Quantity: {cart.quantity}</p>
+              <p className="text-gray-500">Discount: Rs. {cart.discount}</p>
             </div>
           </div>
           <div>
@@ -51,21 +72,25 @@ const AddedCarts = ({ addedCarts, setAddedCarts }) => {
               onClick={() => handleAddToCart(cart.id)}
               className="text-blue-500 font-semibold border-blue-500 px-4 py-1 rounded-lg hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out mr-2"
             >
-              Add
+              <FontAwesomeIcon icon={faPlus} />
             </button>
             <button
               onClick={() => handleRemoveFromCart(cart.id)}
               className="text-red-500 font-semibold border-red-500 px-4 py-1 rounded-lg hover:bg-red-500 hover:text-white transition duration-300 ease-in-out"
             >
-              Remove
+              <FontAwesomeIcon icon={faMinus} />
             </button>
           </div>
         </div>
       ))}
       {addedCarts.length > 0 && (
         <div className="mt-4 text-right">
+          <p className="text-green-600">Discount: Rs. {calculateDiscount()}</p>
+          <p className="text-red-600 text-xs line-through">
+            Price: Rs. {totalPriceWithoutDiscount}
+          </p>
           <p className="text-gray-600">
-            Total Price: Rs. {calculateTotalPrice()}
+            Total Price: Rs. {totalPriceWithDiscount}
           </p>
         </div>
       )}

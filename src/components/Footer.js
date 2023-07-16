@@ -76,7 +76,16 @@ const Footer = () => {
               Yum Eats{" "}
               <span className="font-bold">
                 {" | "}
-                {author} {" | "}{" "}
+                <span
+                  className="hover:underline text-xl"
+                  style={{
+                    fontFamily: "Cedarville Cursive",
+                    cursive: "Cedarville Cursive",
+                  }}
+                >
+                  {author}
+                </span>{" "}
+                {" | "}{" "}
               </span>
             </a>
             All rights reserved.

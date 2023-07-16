@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Capriola&family=Noto+Serif+Display:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Capriola&family=Cedarville+Cursive&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +10,6 @@
     @apply border border-black rounded-xl px-5 py-1;
   }
 }
-
 ::selection {
   @apply bg-orange-700 text-white;
 }

@@ -48,7 +48,9 @@ const AddedCarts = ({ addedCarts, setAddedCarts }) => {
   const totalPriceWithoutDiscount = calculateTotalPrice();
 
   return (
-    <div className="fixed bottom-4 md:right-4 bg-gray-800 text-white p-4 rounded-lg shadow-md mx-auto md:mx-0">
+    // <div className="fixed bottom-4 md:right-4 bg-gray-800 text-white p-4 rounded-lg shadow-md mx-auto md:mx-0 sm:m-0">
+    <div className="fixed bottom-4 left-1/2 right-0 transform -translate-x-1/2 bg-gray-800 text-white p-4 rounded-lg shadow-md w-[300px] sm:w-[400px] z-50">
+      {/* <div className="fixed bottom-4 right-4 bg-gray-800 text-white p-4 rounded-lg shadow-md w-[300px] sm:w-[400px] z-50"> */}
       {addedCarts.map((cart) => (
         <div
           key={cart.id}
@@ -62,9 +64,9 @@ const AddedCarts = ({ addedCarts, setAddedCarts }) => {
             />
             <div>
               <span className="font-semibold">{cart.title}</span>
-              <p className="text-white font-bold">Rs. {cart.price}</p>
+              <p className="text-white">Rs. {cart.price}</p>
               <p className="text-red-500">Quantity: {cart.quantity}</p>
-              <p className="text-gray-500">Discount: Rs. {cart.discount}</p>
+              {/* <p className="text-gray-500">Discount: Rs. {cart.discount}</p> */}
             </div>
           </div>
           <div>
